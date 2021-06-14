@@ -1,5 +1,5 @@
 // Node server to handle the socket.io
-const io = require('socket.io')(8000)
+const io = require('socket.io')(12345)
 
 const express = require('express')
 const app = express()
