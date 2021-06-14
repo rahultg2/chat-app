@@ -1,5 +1,5 @@
 // const socket = io('https://chat-2-point-0.herokuapp.com', { transports: ["websocket"] });
-const socket = io('https://chat-2-point-0.herokuapp.com:8787');
+const socket = io('https://chat-2-point-0.herokuapp.com:3000');
 
 // Geting DOM Element
 const form = document.getElementById('send_content');
