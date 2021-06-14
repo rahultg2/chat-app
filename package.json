@@ -4,7 +4,7 @@
   "description": "This is a node server for the chat clone application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "start": "node index"
   },
   "author": "Rahul",
   "license": "ISC",
