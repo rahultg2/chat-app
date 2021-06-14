@@ -1,5 +1,5 @@
 // Node server to handle the socket.io
-const io = require('socket.io')(3000)
+const io = require('socket.io')(8080)
 
 const express = require('express')
 const app = express()
@@ -12,6 +12,8 @@ http.listen(PORT, () => {
 })
 
 app.use(express.static(__dirname + '/CLIENT_SIDE'))
+
+console.log()
 
 app.get('/', (req, res) =>{
     res.sendFile(__dirname + '/index.html');
