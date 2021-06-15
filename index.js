@@ -24,7 +24,7 @@ const users = {};
 io.on('connection', socket =>{
     // If the new user joined, then others gets the message of joining
     socket.on('new-user-joined', name =>{
-        console.log("User joined", name);
+        // console.log("User joined", name);
         users[socket.id] = name;
         socket.broadcast.emit('user-joined', name);
     }); 
