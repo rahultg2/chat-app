@@ -41,12 +41,21 @@ h1{
 }
 
 .message{
-    background-color: brown;
-    width: 28%;
+    /*background-color: brown;*/
+    max-width: 70%;
+    overflow-wrap: break-word !important;
     padding: 10px;
     margin: 19px 4px;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+.color_right{
+    background-color: #dcf8c6;
+}
+
+.color_left{
+    background-color: white;
 }
 
 .right_one{

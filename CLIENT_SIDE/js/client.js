@@ -16,6 +16,10 @@ const append = (message, position)=>{
     messageContainer.append(messageElement);
     if(position == 'left_one'){
         audio.play();
+        messageElement.classList.add('color_left');
+    } 
+    if(position == 'right_one'){
+        messageElement.classList.add('color_right');
     } 
 }
 
