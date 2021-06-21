@@ -112,7 +112,10 @@ form.addEventListener('submit', (e) =>{
     e.preventDefault();
     const message = messageInput.value;
     // append(`You: ${message}`, 'right_one');
+    var n = message.localeCompare("");
+    if(n != 0){
     append('You', message, 'right_one');
     socket.emit('send', message);
+    }
     messageInput.value = '';
 })
